@@ -2,7 +2,7 @@
 layout: post
 title:  "[For Android beginers] Solution to set listener for button inside ListView"
 date:   2014-12-04 01:52:31
-categories: Android erueat
+categories: blogs
 ---
 **ListView** is often used when we develop Android applications. Generally, we need to add buttons inside each Item. When it comes to add `OnClickListener` for these buttons, we may want to `new` one `OnClickeListener` for each Button inside the `getView()` method of the adapter of the ListView. However, this solution generates lots of listeners and will behave badly on performance, while these listerners behave the same as each other, except for the caller's id. So, how can we optimize the solution for better performance?
 
